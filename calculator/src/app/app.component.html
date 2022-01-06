@@ -1,0 +1,27 @@
+
+ <body>
+   <h3>Basic Calculator</h3>
+  <div class="container">
+    <mat-form-field>
+      <label style="margin-left: 60px;">First value</label>
+      <input class="Operand1" type="number" name="Operand1" [(ngModel)]="Operand1">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <label style="margin-left: 60px;">Second value</label>
+      <input class="Operand2" type="number" name="Operand2" [(ngModel)]="Operand2">
+    </mat-form-field>
+    <h2 style="margin-left: 60px; font-size:25px;">Result : {{result}}</h2>
+  </div>
+
+<div class="button">
+  <button class="operator" mat-raised-button color="primary" (click)="add()"><h1>+</h1></button>
+  <br>
+  <button class="operator" mat-raised-button color="primary" (click)="sub()"><h1>-</h1></button>
+  <br>
+  <button class="operator" mat-raised-button color="primary" (click)="mul()"><h1>x</h1></button>
+  <br>
+  <button class="operator" mat-raised-button color="primary" (click)="div()"><h1>/</h1></button>
+  <br>
+</div>
+</body> 
